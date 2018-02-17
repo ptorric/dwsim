@@ -1,0 +1,5 @@
+idfattura,data,totale,idazienda,azienda,idpersona,nome,cognome,email,nriga,articolo,importo
+1,02/02/2018,30,2,Grifondoro,2,Harry,Potter,harry.potter@grifondoro.it,1,Paiolo,10
+1,02/02/2018,30,2,Grifondoro,2,Harry,Potter,harry.potter@grifondoro.it,2,Bacchetta Magica,20
+2,02/02/2018,40,2,Grifondoro,4,Ginny,Weasley,ginny.weasley@grifondoro.it,1,Divisa usata,35
+2,02/02/2018,40,2,Grifondoro,5,Ginny,Weasley,ginny.weasley@grifondoro.it,2,Libri usati,5

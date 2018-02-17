@@ -1,0 +1,15 @@
+runtime: nodejs
+env: flex
+
+network:
+  forwarded_ports:
+    443:8080
+
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
+  volumes:
+  - name: ramdisk1
+    volume_type: tmpfs
+    size_gb: 0.5

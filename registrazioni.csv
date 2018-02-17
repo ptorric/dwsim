@@ -1,0 +1,9 @@
+idregistrazione,data,tipo,importo,idazienda,azienda
+1,02/02/2018,emissione fattura,30,2,Grifondoro
+2,02/02/2018,incasso fattura,-30,2,Grifondoro
+3,02/02/2018,emissione fattura,40,2,Grifondoro
+4,02/02/2018,incasso fattura,-40,2,Grifondoro
+5,03/02/2018,emissione fattura,30,3,Corvonero
+6,03/02/2018,incasso fattura,-30,3,Corvonero
+7,03/02/2018,emissione fattura,40,3,Corvonero
+8,03/02/2018,incasso fattura,-40,3,Corvonero

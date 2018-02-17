@@ -1,0 +1,16 @@
+{
+  "name": "dwsim",
+  "version": "1.0.0",
+  "description": "Developer Week Simulator",
+  "author": "Paolo Torricelli <ptorric@gnet.it>",
+  "main": "dwsim.js",
+  "scripts": {
+    "start": "node dwsim.js"
+  },
+  "engines": {
+      "node": "9.x"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
