@@ -8,6 +8,7 @@ var headclienti={};
 var headfatture={};
 var headregistrazioni={};
 
+// TODO: generalizzare il metodo di caricamento dati
 fs.readFile('clienti.csv', function( err, data ){
   if(err) throw err;
   var array = data.toString().split("\r\n");
@@ -60,9 +61,10 @@ fs.readFile('registrazioni.csv', function( err, data ){
 });
 
 // ==================================
-//
+// metodi di ricerca in memoria
 // ==================================
 
+// TODO: incapsulare e generalizzare
 function getClienteById(idAzienda)
 {
   var o={ idazienda: null, azienda: null, persone:[] };
@@ -165,11 +167,13 @@ var express = require('express');
 
 var app = express();
 
+// CORS disabled
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
+// CORS disabled
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
@@ -177,6 +181,7 @@ app.listen(PORT, () => {
   console.log('Press Ctrl+C to quit.');
 });
 
+// TODO: usare il middleware per erogare il contenuto statico
 app.get('/', function(req,resp, next) {
   var help='<html><body>';
   help+='<h1>Developer Week Simulator</h1>';
@@ -203,6 +208,8 @@ app.get('/', function(req,resp, next) {
   resp.send(help);
 });
 
+// TODO: deduplicare e generalizzare
+// TODO: la ricerca è da spostare nelle classi sottostanti
 
 app.get('/clienti', function(req, resp, next) {
   var r=[];
