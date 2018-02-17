@@ -30,3 +30,7 @@ poi aprire il browser su http://localhost:8080
 ## Deploy su Google Application Engine
 
 `gcloud app deploy --project` codiceprogetto
+
+### Nota Bene
+
+il CORS è stato disabilitato, nei commenti si vede la parte da remmare per riattivarlo
